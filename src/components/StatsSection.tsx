@@ -14,11 +14,11 @@ const StatsSection = () => {
       subtitle: "programme NAV & distributions",
     },
     {
-      number: "500 +",
+      number: "500+",
       subtitle: "underlying portfolio companies",
     },
     {
-      number: "60 +",
+      number: "60+",
       subtitle: "transactions in strategy completed",
     },
   ];
@@ -33,7 +33,7 @@ const StatsSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="text-center"
+              className="text-center flex flex-col items-center"
             >
               <h3 className="text-4xl md:text-5xl font-light text-eastpeak-gold mb-3">
                 {stat.number}

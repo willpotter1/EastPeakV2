@@ -57,10 +57,15 @@ const Values = () => {
       description: "We leverage our deep understanding of Central European markets, cultures, and business practices to identify unique opportunities and navigate regional complexities.",
     },
     {
-      title: "Long-Term Perspective",
-      description: "We make decisions with a long-term view, focusing on sustainable value creation rather than short-term gains.",
+      title: "Impact",
+      description: "The private equity asset class in central Europe has hugely contributed to the transformation of the region's economies and societies since the 1990s. By importing private capital, it has financed with long-term equity thousands of small and medium sized businesses – helping create jobs and offer more choices to consumers.",
     },
   ];
+
+  const [esgRef, esgInView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -91,6 +96,19 @@ const Values = () => {
               />
             ))}
           </div>
+          
+          <motion.div
+            ref={esgRef}
+            initial={{ opacity: 0, y: 30 }}
+            animate={esgInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ duration: 0.8 }}
+            className="mt-16 bg-white p-8 rounded-lg shadow-sm"
+          >
+            <h3 className="text-2xl font-semibold text-eastpeak-blue mb-4">ESG Commitment</h3>
+            <p className="text-gray-600 mb-4">
+              EastPeak is in the process of becoming a signatory to the Principles for Responsible Investment (PRI) and is committed to incorporating ESG considerations into our investment process. We believe that responsible investment practices contribute to better risk management and can enhance long-term returns.
+            </p>
+          </motion.div>
         </div>
       </div>
 

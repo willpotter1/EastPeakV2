@@ -6,28 +6,13 @@ const HeroSection = () => {
     <div 
       className="hero-section h-screen w-full relative overflow-hidden" 
       style={{ 
-        backgroundImage: "url('/public/lovable-uploads/b15b0229-2d0e-4bec-930d-0c4439945799.png')",
+        backgroundImage: "url('/public/lovable-uploads/6db32e33-7f23-44e3-9b1d-b27c4925d681.png')",
         backgroundPosition: "center bottom",
         backgroundSize: "cover"
       }}
     >
       <div className="overlay absolute inset-0 bg-opacity-50"></div>
       <div className="container mx-auto px-6 md:px-12 h-full flex flex-col justify-center relative z-10">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-center"
-        >
-          <h1 className="text-white text-2xl md:text-4xl font-light tracking-wider mb-6 md:mb-8">
-            <span className="inline-block mx-4">Focus</span>
-            <span className="inline-block mx-4">•</span>
-            <span className="inline-block mx-4">Network</span>
-            <span className="inline-block mx-4">•</span>
-            <span className="inline-block mx-4">Experience</span>
-          </h1>
-        </motion.div>
-
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

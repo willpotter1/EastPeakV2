@@ -19,6 +19,12 @@ const Index = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       className="min-h-screen flex flex-col"
+      style={{
+        backgroundImage: `url('/public/lovable-uploads/43305a0a-dc1e-4fb9-b90b-94202f42b69f.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center bottom',
+        backgroundAttachment: 'fixed'
+      }}
     >
       <Navbar />
       <HeroSection />

@@ -72,7 +72,7 @@ const CoreValues = () => {
             </div>
             <h3 className="text-2xl font-semibold mb-4 text-eastpeak-blue uppercase">EXPERIENCE</h3>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Over 60 investments completed by the EastPeak team in this strategy
+              Over 60 investments completed by EastPeak team in this strategy
             </p>
             <p className="text-gray-600 leading-relaxed">
               Over EUR 1b of value & proceeds realised
