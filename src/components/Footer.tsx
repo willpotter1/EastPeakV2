@@ -14,11 +14,12 @@ const Footer = () => {
       ref={ref}
       className="hero-section py-12 relative"
       style={{
-        backgroundImage:
-          "url('/public/lovable-uploads/9c117b2c-07e1-43f3-8807-013fa0cc3242.png')",
+        backgroundImage: "url('/public/lovable-uploads/b15b0229-2d0e-4bec-930d-0c4439945799.png')",
+        backgroundPosition: "center top",
+        backgroundSize: "cover"
       }}
     >
-      <div className="overlay absolute inset-0"></div>
+      <div className="overlay absolute inset-0 bg-eastpeak-blue bg-opacity-80"></div>
       <div className="container mx-auto px-6 md:px-12 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

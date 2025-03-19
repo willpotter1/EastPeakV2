@@ -19,12 +19,12 @@ const TeamMember = ({ img, name, position, description }: { img: string; name: s
       transition={{ duration: 0.6 }}
       className="flex flex-col items-center"
     >
-      <div className="w-48 h-48 md:w-64 md:h-64 overflow-hidden rounded-full mb-6 team-image">
+      <div className="w-48 h-48 md:w-52 md:h-52 overflow-hidden rounded-full mb-6 team-image">
         <img src={img} alt={name} className="w-full h-full object-cover" />
       </div>
       <h3 className="text-2xl font-semibold text-eastpeak-blue mb-1">{name}</h3>
       <p className="text-eastpeak-gold mb-4">{position}</p>
-      <p className="text-gray-600 text-center max-w-md">{description}</p>
+      <p className="text-gray-600 text-center max-w-md leading-relaxed">{description}</p>
     </motion.div>
   );
 };
@@ -44,19 +44,19 @@ const Team = () => {
       img: "/public/lovable-uploads/2f2de287-8ef3-4687-9f50-b68e722efcd4.png",
       name: "John Smith",
       position: "Managing Partner",
-      description: "20+ years of private equity experience across Central and Eastern Europe.",
+      description: "20+ years of private equity experience across Central and Eastern Europe. Previously worked at leading investment firms focusing on CEE markets. Extensive expertise in secondary transactions and direct investments.",
     },
     {
       img: "/public/lovable-uploads/1acca5e1-8a8d-45d8-97d1-17024aa78dc7.png",
       name: "Michael Johnson",
       position: "Investment Director",
-      description: "Specialist in secondary transactions with deep network in CEE region.",
+      description: "Specialist in secondary transactions with deep network in CEE region. Over 15 years of experience in private equity and corporate finance. Previously worked at top-tier investment banks and private equity firms.",
     },
     {
       img: "/public/lovable-uploads/6f658688-8ad5-41f8-bc4c-ed46cbd86b4e.png",
       name: "Robert Williams",
       position: "Partner",
-      description: "Leads our operational value creation team with focus on portfolio companies.",
+      description: "Leads our operational value creation team with focus on portfolio companies. Has overseen more than 30 successful exits in the CEE region. Expert in operational improvements and strategic development for portfolio companies.",
     },
   ];
 
@@ -64,7 +64,7 @@ const Team = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      <div className="pt-28 pb-20 bg-white">
+      <div className="pt-28 pb-20 bg-gray-50">
         <div className="container mx-auto px-6 md:px-12">
           <motion.div
             ref={headerRef}

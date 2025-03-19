@@ -23,8 +23,8 @@ const Index = () => {
       <Navbar />
       <HeroSection />
       <CoreValues />
-      <Mission />
       <StatsSection />
+      <Mission />
       <Footer />
     </motion.div>
   );

@@ -24,7 +24,7 @@ const StatsSection = () => {
   ];
 
   return (
-    <section ref={ref} className="py-20 bg-gray-100">
+    <section ref={ref} className="py-20 bg-eastpeak-blue text-white">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
@@ -33,12 +33,12 @@ const StatsSection = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="stat-card bg-white rounded-lg shadow-sm p-10 text-center"
+              className="text-center"
             >
-              <h3 className="text-4xl md:text-5xl font-light text-eastpeak-blue mb-3">
+              <h3 className="text-4xl md:text-5xl font-light text-eastpeak-gold mb-3">
                 {stat.number}
               </h3>
-              <p className="text-gray-600">{stat.subtitle}</p>
+              <p className="text-white text-opacity-90">{stat.subtitle}</p>
             </motion.div>
           ))}
         </div>
