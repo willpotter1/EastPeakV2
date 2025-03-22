@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -28,9 +27,6 @@ const CoreValues = () => {
             <p className="text-gray-600 leading-relaxed mb-4">
               The only firm specialising in CEE secondaries and liquidity solutions
             </p>
-            <p className="text-gray-600 leading-relaxed">
-              Dedicated coverage of this market since 2008
-            </p>
           </motion.div>
 
           <motion.div 
@@ -50,10 +46,7 @@ const CoreValues = () => {
             </div>
             <h3 className="text-2xl font-semibold mb-4 text-eastpeak-blue uppercase">NETWORK</h3>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Proven ability to generate proprietary deal flow
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              and create value for our partners
+              Proven ability to generate proprietary deal flow and create value for our partners
             </p>
           </motion.div>
 
@@ -73,9 +66,6 @@ const CoreValues = () => {
             <h3 className="text-2xl font-semibold mb-4 text-eastpeak-blue uppercase">EXPERIENCE</h3>
             <p className="text-gray-600 leading-relaxed mb-4">
               Over 60 investments completed by EastPeak team in this strategy
-            </p>
-            <p className="text-gray-600 leading-relaxed">
-              Over EUR 1b of value & proceeds realised
             </p>
           </motion.div>
         </div>

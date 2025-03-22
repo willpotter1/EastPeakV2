@@ -1,7 +1,5 @@
-
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
@@ -64,22 +62,9 @@ const Team = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      <div className="pt-28 pb-20 bg-gray-50">
-        <div className="container mx-auto px-6 md:px-12">
-          <motion.div
-            ref={headerRef}
-            initial={{ opacity: 0, y: 20 }}
-            animate={headerInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl font-light text-eastpeak-blue mb-4">Our Team</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Our experienced investment team combines deep industry knowledge, strong regional networks, and specialized expertise in the Central European market.
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16">
+      <div className="flex-grow flex flex-col bg-gray-50">
+        <div className="pt-28 container mx-auto px-6 md:px-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-20">
             {teamMembers.map((member, index) => (
               <TeamMember
                 key={index}
@@ -91,9 +76,22 @@ const Team = () => {
             ))}
           </div>
         </div>
+          
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          className="mt-auto flex-grow bg-[#adc2d5] flex items-center py-24"
+        >
+          <div className="w-full">
+            <p className="text-[#2d3748] text-2xl md:text-3xl text-center font-light leading-relaxed">
+              EastPeak works with its partner company speak invest AG,
+              <br />
+              which has a broader geographical remit
+            </p>
+          </div>
+        </motion.div>
       </div>
-
-      <Footer />
     </div>
   );
 };

@@ -1,215 +1,87 @@
-
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useToast } from "@/components/ui/use-toast";
 
 const Contact = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: "",
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const [headerRef, headerInView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
-  const [formRef, formInView] = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
-      toast({
-        title: "Message sent",
-        description: "We'll get back to you as soon as possible.",
-      });
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
-      setIsSubmitting(false);
-    }, 1500);
-  };
-
   return (
-    <div className="min-h-screen flex flex-col">
-      <Navbar />
-      
-      <div className="pt-28 pb-20 bg-white">
-        <div className="container mx-auto px-6 md:px-12">
-          <motion.div
-            ref={headerRef}
-            initial={{ opacity: 0, y: 20 }}
-            animate={headerInView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.6 }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl md:text-4xl font-light text-eastpeak-blue mb-4">Contact Us</h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              We'd love to hear from you. Please get in touch with any questions about our services or to discuss potential opportunities.
-            </p>
-          </motion.div>
+    <>
+      <div className="min-h-screen flex flex-col">
+        <Navbar />
+        
+        <div 
+          className="flex-grow flex flex-col justify-end relative"
+          style={{
+            backgroundImage: "url('/Images/Backgrounds/EastPeak_lastpage.jpg')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center'
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black/70" />
+          <div className="container mx-auto px-6 md:px-24 pb-16 relative">
+            <div className="flex flex-col items-start">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+                className="text-white space-y-2 mb-4"
+              >
+                <h2 className="text-3xl font-semibold">EastPeak Limited</h2>
+                <p className="text-xl font-light">Byron Mews, London, NW3 2NQ</p>
+                <p className="text-xl font-light">United Kingdom</p>
+              </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <motion.div
-              ref={formRef}
-              initial={{ opacity: 0, x: -30 }}
-              animate={formInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.6 }}
-            >
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-eastpeak-blue focus:border-transparent"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-eastpeak-blue focus:border-transparent"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-                    Subject
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    required
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-eastpeak-blue focus:border-transparent"
-                  />
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                    rows={5}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-eastpeak-blue focus:border-transparent"
-                  />
-                </div>
-                
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="bg-eastpeak-blue text-white py-2 px-6 rounded-md hover:bg-opacity-90 transition-all disabled:opacity-70"
+              <div className="relative flex items-center w-full justify-between">
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  className="text-white space-y-2"
                 >
-                  {isSubmitting ? "Sending..." : "Send Message"}
-                </button>
-              </form>
-            </motion.div>
-            
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              animate={formInView ? { opacity: 1, x: 0 } : {}}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="bg-gray-50 p-8 rounded-lg"
-            >
-              <h3 className="text-xl font-semibold text-eastpeak-blue mb-6">Contact Information</h3>
-              
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <svg className="w-6 h-6 text-eastpeak-blue mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
-                  <div>
-                    <h4 className="font-medium text-gray-900 mb-1">Office Address</h4>
-                    <p className="text-gray-600">
-                      Mariahilfer Straße 47<br />
-                      1060 Vienna, Austria
+                  <div className="space-y-2">
+                    <p className="text-xl font-light">
+                      <span className="inline-block w-24">Phone:</span>
+                      <span>+44 20 7864 7225</span>
+                    </p>
+                    <p className="text-xl font-light">
+                      <span className="inline-block w-24">Email:</span>
+                      <span>info@eastpeakinvest.com</span>
                     </p>
                   </div>
-                </div>
+                </motion.div>
                 
-                <div className="flex items-start space-x-4">
-                  <svg className="w-6 h-6 text-eastpeak-blue mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                  <div>
-                    <h4 className="font-medium text-gray-900 mb-1">Email</h4>
-                    <p className="text-gray-600">info@eastpeakinvest.com</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <svg className="w-6 h-6 text-eastpeak-blue mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                  </svg>
-                  <div>
-                    <h4 className="font-medium text-gray-900 mb-1">Phone</h4>
-                    <p className="text-gray-600">+43 1 234 5678</p>
-                  </div>
-                </div>
+                <motion.img
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 0.6 }}
+                  src="/Images/Backgrounds/TransparentLogo.png"
+                  alt="EastPeak Logo"
+                  className="h-32 w-auto opacity-30 brightness-0 invert"
+                />
               </div>
-              
-              <div className="mt-8">
-                <h3 className="text-xl font-semibold text-eastpeak-blue mb-4">Office Hours</h3>
-                <p className="text-gray-600">
-                  Monday - Friday: 9:00 AM - 6:00 PM<br />
-                  Saturday - Sunday: Closed
-                </p>
-              </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </div>
 
-      <Footer />
-    </div>
+      <div className="bg-[#001f2f] py-16 px-6">
+        <div className="container mx-auto">
+          <h2 className="text-[#b8860b] text-2xl mb-6">Disclaimer and Legal Notice</h2>
+          <div className="text-white/80 space-y-6 text-sm leading-relaxed">
+            <p>
+              Disclaimer: The information contained in this website is for general information purposes only and EastPeak Ltd is not soliciting any action based on it. The material is not to be constructed as an offer or a recommendation to buy or sell an interest in any partnership, fund, or other product nor is it to be interpreted as investment advice or investment management. The information is provided by EastPeak Ltd and while we endeavor to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk. In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website. If you send us an email, we may collect your name, email address and any other information you provide to us.
+            </p>
+            <div className="w-full border-t border-white/10 my-8" />
+            <p className="text-white/60 text-center">
+              Copyright © 2025. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };
 
