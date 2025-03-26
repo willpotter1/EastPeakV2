@@ -2,6 +2,10 @@ import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import ImpactImage from "../../Images/Logo/Impact.png";
+import ESGImage from "../../Images/Logo/ESG.png";
+import ValuesImage from "../../Images/Logo/Values.png";
+import BeigeBackground from "/Images/Backgrounds/BeigeBack.png";
 
 const ValueSection = ({ title, description }: { title: string; description: string }) => {
   const [ref, inView] = useInView({
@@ -17,7 +21,22 @@ const ValueSection = ({ title, description }: { title: string; description: stri
       transition={{ duration: 0.6 }}
       className="flex flex-col items-center text-center"
     >
-      <h3 className="text-[#b8860b] text-2xl md:text-3xl font-semibold mb-6">{title}</h3>
+      {title === "IMPACT" && (
+        <div className="mb-6">
+          <img src={ImpactImage} alt="Impact" className="w-28 h-24" />
+        </div>
+      )}
+      {title === "ESG" && (
+        <div className="mb-6">
+          <img src={ESGImage} alt="ESG" className="w-28 h-24" />
+        </div>
+      )}
+      {title === "VALUES" && (
+        <div className="mb-6">
+          <img src={ValuesImage} alt="Values" className="w-28 h-24" />
+        </div>
+      )}
+      <h3 className="text-[#bd825c] text-2xl md:text-3xl font-semibold mb-6">{title}</h3>
       <p className="text-gray-700 text-lg leading-relaxed max-w-md">{description}</p>
     </motion.div>
   );
@@ -47,7 +66,15 @@ const Values = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      <div className="flex-grow flex flex-col bg-[#efe3d9]">
+      <div className="flex-grow flex flex-col"
+        style={{
+          backgroundImage: `url(${BeigeBackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundColor: '#efe3d9', // Fallback color
+        }}
+      >
         <div className="flex-grow container mx-auto px-6 md:px-12 flex flex-col justify-center pt-40">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-6xl mx-auto w-full">
             {sections.map((section, index) => (
@@ -67,7 +94,7 @@ const Values = () => {
           className="py-24"
         >
           <div className="container mx-auto px-6 md:px-12">
-            <p className="text-[#b8860b] text-xl md:text-2xl text-center font-semibold leading-relaxed max-w-5xl mx-auto">
+            <p className="text-[#bd825c] text-xl md:text-2xl text-center font-semibold leading-relaxed max-w-5xl mx-auto">
               EastPeak is under the process of becoming a signatory to the Principles of Responsible Investing (PRI) and is implementing Article 8 of the 8 of the EU Sustainable Finance Disclosure Regulation (SFDR) for its funds
             </p>
           </div>

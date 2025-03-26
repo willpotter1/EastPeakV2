@@ -29,7 +29,7 @@ const Index = () => {
         <div className="relative">
           <HeroSection />
           {/* Dark navy blue section */}
-          <div className="absolute bottom-0 left-0 right-0 bg-[#223C48] text-[#b8860b] py-6">
+          <div className="absolute bottom-0 left-0 right-0 bg-[#223C48] text-[#bd825c] py-6">
             <div className="container mx-auto text-center">
               <h2 className="text-xl md:text-3xl font-light tracking-wide px-4">
                 Your Partner for Central European Private Equity

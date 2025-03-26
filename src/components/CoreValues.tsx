@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import FocusImage from "../../Images/Logo/Focus.png";
+import NetworkImage from "../../Images/Logo/Network.png";
+import ExperienceImage from "../../Images/Logo/Experience.png";
 
 const CoreValues = () => {
   const [ref, inView] = useInView({
@@ -8,7 +11,7 @@ const CoreValues = () => {
   });
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20">
       <div className="container mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12" ref={ref}>
           <motion.div 
@@ -17,14 +20,11 @@ const CoreValues = () => {
             transition={{ duration: 0.6 }}
             className="flex flex-col items-center text-center"
           >
-            <div className="mb-6 p-4 rounded-full bg-gray-50">
-              <svg className="w-12 h-12 text-eastpeak-blue" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <rect x="8" y="8" width="8" height="8" rx="4" stroke="currentColor" strokeWidth="2"/>
-                <rect x="2" y="2" width="20" height="20" rx="3" stroke="currentColor" strokeWidth="2"/>
-              </svg>
+            <div className="mb-6">
+              <img src={FocusImage} alt="Focus" className="w-28 h-24" />
             </div>
-            <h3 className="text-2xl font-semibold mb-4 text-eastpeak-blue uppercase">FOCUS</h3>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <h3 className="text-2xl font-semibold mb-4 text-[#002d3d] uppercase">FOCUS</h3>
+            <p className="text-[#295671] leading-relaxed mb-4">
               The only firm specialising in CEE secondaries and liquidity solutions
             </p>
           </motion.div>
@@ -35,17 +35,11 @@ const CoreValues = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex flex-col items-center text-center"
           >
-            <div className="mb-6 p-4 rounded-full bg-gray-50">
-              <svg className="w-12 h-12 text-eastpeak-blue" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="5" cy="12" r="2" stroke="currentColor" strokeWidth="2"/>
-                <circle cx="12" cy="5" r="2" stroke="currentColor" strokeWidth="2"/>
-                <circle cx="19" cy="12" r="2" stroke="currentColor" strokeWidth="2"/>
-                <circle cx="12" cy="19" r="2" stroke="currentColor" strokeWidth="2"/>
-                <path d="M5 12H19M12 5V19" stroke="currentColor" strokeWidth="2"/>
-              </svg>
+            <div className="mb-6">
+              <img src={NetworkImage} alt="Network" className="w-32 h-24" />
             </div>
-            <h3 className="text-2xl font-semibold mb-4 text-eastpeak-blue uppercase">NETWORK</h3>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <h3 className="text-2xl font-semibold mb-4 text-[#002d3d] uppercase">NETWORK</h3>
+            <p className="text-[#295671] leading-relaxed mb-4">
               Proven ability to generate proprietary deal flow and create value for our partners
             </p>
           </motion.div>
@@ -56,15 +50,11 @@ const CoreValues = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="flex flex-col items-center text-center"
           >
-            <div className="mb-6 p-4 rounded-full bg-gray-50">
-              <svg className="w-12 h-12 text-eastpeak-blue" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 8L16 16M16 8L8 16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-                <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
-                <path d="M12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22" stroke="currentColor" strokeWidth="2"/>
-              </svg>
+            <div className="mb-6">
+              <img src={ExperienceImage} alt="Experience" className="w-36 h-24" />
             </div>
-            <h3 className="text-2xl font-semibold mb-4 text-eastpeak-blue uppercase">EXPERIENCE</h3>
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <h3 className="text-2xl font-semibold mb-4 text-[#002d3d] uppercase">EXPERIENCE</h3>
+            <p className="text-[#295671] leading-relaxed mb-4">
               Over 60 investments completed by EastPeak team in this strategy
             </p>
           </motion.div>

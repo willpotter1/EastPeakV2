@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import NavyBackground from "/Images/Backgrounds/NavyBack.png";
 
 const ServiceCard = ({ title, description, icon }: { title: string; description: string; icon: React.ReactNode }) => {
   const [ref, inView] = useInView({
@@ -33,17 +34,26 @@ const Services = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      <div className="min-h-screen bg-[#2D4E5F] pt-32 pb-20">
+      <div 
+        className="flex-1 pt-32 pb-20 relative"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${NavyBackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundColor: '#2D4E5F', // Fallback color
+        }}
+      >
         <div className="container mx-auto px-6 md:px-12">
-          <div className="flex flex-col gap-12 max-w-3xl mx-auto mb-32">
+          <div className="flex flex-col gap-8 max-w-4xl mx-auto mb-24">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-center"
             >
-              <p className="text-white/90 text-xl leading-relaxed">
-                EastPeak's seasoned team has completed more private equity secondary transactions in central Europe than anyone else
+              <p className="text-white/90 text-xl md:text-2xl leading-relaxed font-semibold">
+                EastPeak's seasoned team has completed <span className="text-[#bd825c]">more private equity secondary transactions in central Europe than anyone else</span>
               </p>
             </motion.div>
 
@@ -53,7 +63,7 @@ const Services = () => {
               transition={{ duration: 0.6, delay: 0.4 }}
               className="text-center"
             >
-              <p className="text-white/90 text-xl leading-relaxed">
+              <p className="text-white/90 text-xl md:text-2xl leading-relaxed font-semibold">
                 We invest in high quality mid-sized private businesses whether single assets or as part of a portfolio
               </p>
             </motion.div>
@@ -64,8 +74,8 @@ const Services = () => {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="text-center"
             >
-              <p className="text-white/90 text-xl leading-relaxed">
-                We offer both liquidity solutions for existing investors and capital for companies that wish to grow
+              <p className="text-white/90 text-xl md:text-2xl leading-relaxed font-semibold">
+                <span className="text-[#bd825c]">We offer both liquidity solutions for existing investors and capital for companies that wish to grow</span>
               </p>
             </motion.div>
           </div>
@@ -178,56 +188,56 @@ const Services = () => {
               <div className="flex items-start space-x-4">
                 <div className="w-3 h-3 mt-2 rounded-full bg-[#b8860b] flex-shrink-0"></div>
                 <div>
-                  <h3 className="text-[#b8860b] text-2xl font-semibold mb-2">LP Secondaries.</h3>
-                  <p className="text-white text-lg">We purchase investors in private equity funds in the region and have led over 30 such transactions. We buy both single interest and portfolios</p>
+                  <p className="text-lg"><span className="text-[#b8860b] text-2xl font-semibold">LP Secondaries: </span>
+                  <span className="text-white">We purchase investors in private equity funds in the region and have led over 30 such transactions. We buy both single interest and portfolios</span></p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
                 <div className="w-3 h-3 mt-2 rounded-full bg-[#b8860b] flex-shrink-0"></div>
                 <div>
-                  <h3 className="text-[#b8860b] text-2xl font-semibold mb-2">GP-Led Transactions.</h3>
-                  <p className="text-white text-lg">We support continuation funds where our private equity partners would like to both realise liquidity and continue growing their investments</p>
+                  <p className="text-lg"><span className="text-[#b8860b] text-2xl font-semibold">GP-Led Transactions: </span>
+                  <span className="text-white">We support continuation funds where our private equity partners would like to both realise liquidity and continue growing their investments</span></p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
                 <div className="w-3 h-3 mt-2 rounded-full bg-[#b8860b] flex-shrink-0"></div>
                 <div>
-                  <h3 className="text-[#b8860b] text-2xl font-semibold mb-2">Fund Restructurings.</h3>
-                  <p className="text-white text-lg">We can help restructure private equity funds enabling strategic sales and unlocking value for our partners</p>
+                  <p className="text-lg"><span className="text-[#b8860b] text-2xl font-semibold">Fund Restructurings: </span>
+                  <span className="text-white">We can help restructure private equity funds enabling strategic sales and unlocking value for our partners</span></p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
                 <div className="w-3 h-3 mt-2 rounded-full bg-[#b8860b] flex-shrink-0"></div>
                 <div>
-                  <h3 className="text-[#b8860b] text-2xl font-semibold mb-2">Tail-ends.</h3>
-                  <p className="text-white text-lg">We can purchase the last assets in a private equity fund, allowing ageing funds to be liquidated</p>
+                  <p className="text-lg"><span className="text-[#b8860b] text-2xl font-semibold">Tail-ends: </span>
+                  <span className="text-white">We can purchase the last assets in a private equity fund, allowing ageing funds to be liquidated</span></p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
                 <div className="w-3 h-3 mt-2 rounded-full bg-[#b8860b] flex-shrink-0"></div>
                 <div>
-                  <h3 className="text-[#b8860b] text-2xl font-semibold mb-2">Aged & Secondary Directs:</h3>
-                  <p className="text-white text-lg">We finance existing private equity owned businesses that need capital to grow or that seek liquidity for their investors</p>
+                  <p className="text-lg"><span className="text-[#b8860b] text-2xl font-semibold">Aged & Secondary Directs: </span>
+                  <span className="text-white">We finance existing private equity owned businesses that need capital to grow or that seek liquidity for their investors</span></p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
                 <div className="w-3 h-3 mt-2 rounded-full bg-[#b8860b] flex-shrink-0"></div>
                 <div>
-                  <h3 className="text-[#b8860b] text-2xl font-semibold mb-2">Independent Sponsor Transactions:</h3>
-                  <p className="text-white text-lg">We are open to high quality single asset transactions with fund-less sponsors</p>
+                  <p className="text-lg"><span className="text-[#b8860b] text-2xl font-semibold">Independent Sponsor Transactions: </span>
+                  <span className="text-white">We are open to high quality single asset transactions with fund-less sponsors</span></p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
                 <div className="w-3 h-3 mt-2 rounded-full bg-[#b8860b] flex-shrink-0"></div>
                 <div>
-                  <h3 className="text-[#b8860b] text-2xl font-semibold mb-2">Co-investments:</h3>
-                  <p className="text-white text-lg">We co-invest alongside our extensive network of trusted GPs where needed to fully finance a new private equity investment</p>
+                  <p className="text-lg"><span className="text-[#b8860b] text-2xl font-semibold">Co-investments: </span>
+                  <span className="text-white">We co-invest alongside our extensive network of trusted GPs where needed to fully finance a new private equity investment</span></p>
                 </div>
               </div>
             </div>

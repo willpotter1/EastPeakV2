@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import BlueBackground from "/Images/Backgrounds/BlueBack.png";
 
 const TeamMember = ({ img, name, position, description }: { img: string; name: string; position: string; description: string }) => {
   const [ref, inView] = useInView({
@@ -62,7 +63,15 @@ const Team = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      <div className="flex-grow flex flex-col bg-gray-50">
+      <div className="flex-grow flex flex-col"
+        style={{
+          backgroundImage: `url(${BlueBackground})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundColor: '#2D4E5F', // Fallback color
+        }}
+      >
         <div className="pt-28 container mx-auto px-6 md:px-12">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-20">
             {teamMembers.map((member, index) => (
@@ -85,8 +94,16 @@ const Team = () => {
         >
           <div className="w-full">
             <p className="text-[#2d3748] text-2xl md:text-3xl text-center font-light leading-relaxed">
-              EastPeak works with its partner company speak invest AG,
-              <br />
+              EastPeak works with its partner company{' '}
+              <a 
+                href="https://www.speakinvest.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-[#2d3748] hover:text-[#bd825c] transition-colors underline"
+              >
+                speak invest AG
+              </a>
+              ,<br />
               which has a broader geographical remit
             </p>
           </div>

@@ -20,7 +20,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fixed w-full z-50 bg-[#002d3d] shadow-lg h-24">
+    <nav className="fixed w-full z-50 bg-[#001a24] shadow-lg h-24">
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center h-full">
         <Link to="/" className="flex items-center">
           <img 

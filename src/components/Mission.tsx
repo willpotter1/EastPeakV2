@@ -8,7 +8,7 @@ const Mission = () => {
   });
 
   return (
-    <section className="py-20 bg-gray-100">
+    <section className="py-20">
       <div className="container mx-auto px-6 md:px-12">
         <motion.div
           ref={ref}
@@ -17,7 +17,7 @@ const Mission = () => {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto text-center"
         >
-          <h2 className="text-2xl md:text-4xl font-light text-eastpeak-blue mb-10 leading-relaxed">
+          <h2 className="text-2xl md:text-4xl font-light text-[#002d3d] mb-10 leading-relaxed">
             Our extensive experience in private markets and our deep knowledge of central Europe allows us to uncover potential that others overlook.
           </h2>
         </motion.div>
