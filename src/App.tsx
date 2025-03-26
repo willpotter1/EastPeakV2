@@ -2,8 +2,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { Element, scroller } from "react-scroll";
+import { motion } from "framer-motion";
 
 // Pages
 import Index from "./pages/Index";
@@ -12,30 +12,55 @@ import Services from "./pages/Services";
 import Team from "./pages/Team";
 import Values from "./pages/Values";
 import Contact from "./pages/Contact";
-import NotFound from "./pages/NotFound";
+import Navbar from "./components/Navbar";
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <AnimatePresence mode="wait">
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/values" element={<Values />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </AnimatePresence>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+const App = () => {
+  const scrollToSection = (name: string) => {
+    scroller.scrollTo(name, {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart",
+      offset: -96 // Height of navbar
+    });
+  };
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <div className="min-h-screen">
+          <Navbar scrollToSection={scrollToSection} />
+          
+          <Element name="home" className="section">
+            <Index />
+          </Element>
+          
+          <Element name="about" className="section">
+            <About />
+          </Element>
+          
+          <Element name="services" className="section">
+            <Services />
+          </Element>
+          
+          <Element name="team" className="section">
+            <Team />
+          </Element>
+          
+          <Element name="values" className="section">
+            <Values />
+          </Element>
+          
+          <Element name="contact" className="section">
+            <Contact />
+          </Element>
+        </div>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;

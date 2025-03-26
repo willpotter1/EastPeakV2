@@ -35,7 +35,7 @@ const Services = () => {
       <Navbar />
       
       <div 
-        className="flex-1 pt-32 pb-20 relative"
+        className="flex-1 relative"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(${NavyBackground})`,
           backgroundSize: 'cover',
@@ -44,8 +44,8 @@ const Services = () => {
           backgroundColor: '#2D4E5F', // Fallback color
         }}
       >
-        <div className="container mx-auto px-6 md:px-12">
-          <div className="flex flex-col gap-8 max-w-4xl mx-auto mb-24">
+        <div className="container mx-auto px-6 md:px-12 py-32">
+          <div className="flex flex-col gap-12 max-w-3xl mx-auto mb-32">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
