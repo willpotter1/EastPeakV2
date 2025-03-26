@@ -66,7 +66,8 @@ const Values = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
-      <div className="flex-grow flex flex-col"
+      <div 
+        className="flex-1 relative"
         style={{
           backgroundImage: `url(${BeigeBackground})`,
           backgroundSize: 'cover',
@@ -75,8 +76,8 @@ const Values = () => {
           backgroundColor: '#efe3d9', // Fallback color
         }}
       >
-        <div className="flex-grow container mx-auto px-6 md:px-12 flex flex-col justify-center pt-40">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-6xl mx-auto w-full">
+        <div className="container mx-auto px-6 md:px-12 py-32">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-6xl mx-auto w-full mb-32">
             {sections.map((section, index) => (
               <ValueSection
                 key={index}
@@ -91,7 +92,7 @@ const Values = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="py-24"
+          className="bg-[#efe3d9] py-24"
         >
           <div className="container mx-auto px-6 md:px-12">
             <p className="text-[#bd825c] text-xl md:text-2xl text-center font-semibold leading-relaxed max-w-5xl mx-auto">
