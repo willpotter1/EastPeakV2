@@ -36,8 +36,8 @@ const ValueSection = ({ title, description }: { title: string; description: stri
           <img src={ValuesImage} alt="Values" className="w-28 h-24" />
         </div>
       )}
-      <h3 className="text-[#bd825c] text-2xl md:text-3xl font-semibold mb-6">{title}</h3>
-      <p className="text-gray-700 text-lg leading-relaxed max-w-md">{description}</p>
+      <h3 className="text-[#bd825c] text-3xl md:text-4xl font-semibold mb-6">{title}</h3>
+      <p className="text-gray-700 text-xl md:text-2xl leading-relaxed max-w-md">{description}</p>
     </motion.div>
   );
 };
@@ -64,7 +64,6 @@ const Values = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Navbar />
       
       <div 
         className="flex-1 relative"
@@ -95,8 +94,8 @@ const Values = () => {
           className="bg-[#efe3d9] py-24"
         >
           <div className="container mx-auto px-6 md:px-12">
-            <p className="text-[#bd825c] text-xl md:text-2xl text-center font-semibold leading-relaxed max-w-5xl mx-auto">
-              EastPeak is under the process of becoming a signatory to the Principles of Responsible Investing (PRI) and is implementing Article 8 of the 8 of the EU Sustainable Finance Disclosure Regulation (SFDR) for its funds
+            <p className="text-[#bd825c] text-2xl md:text-3xl text-center font-semibold leading-relaxed max-w-5xl mx-auto">
+              EastPeak is in the process of becoming a signatory to the Principles of Responsible Investing (PRI) and is implementing Article 8 of the 8 of the EU Sustainable Finance Disclosure Regulation (SFDR) for its funds
             </p>
           </div>
         </motion.div>

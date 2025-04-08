@@ -25,7 +25,6 @@ const Index = () => {
       <div className="absolute inset-0 bg-black/20" />
       
       <div className="relative z-10">
-        <Navbar />
         <div className="relative">
           <HeroSection />
           {/* Dark navy blue section */}

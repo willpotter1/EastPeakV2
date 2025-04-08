@@ -15,9 +15,9 @@ const Mission = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
-          className="max-w-4xl mx-auto text-center"
+          className="max-w-5xl mx-auto text-center"
         >
-          <h2 className="text-2xl md:text-4xl font-light text-[#002d3d] mb-10 leading-relaxed">
+          <h2 className="text-3xl md:text-5xl font-light text-[#002d3d] mb-10 leading-relaxed">
             Our extensive experience in private markets and our deep knowledge of central Europe allows us to uncover potential that others overlook.
           </h2>
         </motion.div>

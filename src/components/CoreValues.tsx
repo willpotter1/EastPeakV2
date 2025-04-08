@@ -23,9 +23,13 @@ const CoreValues = () => {
             <div className="mb-6">
               <img src={FocusImage} alt="Focus" className="w-28 h-24" />
             </div>
-            <h3 className="text-2xl font-semibold mb-4 text-[#002d3d] uppercase">FOCUS</h3>
-            <p className="text-[#295671] leading-relaxed mb-4">
-              The only firm specialising in CEE secondaries and liquidity solutions
+            <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-[#002d3d] uppercase">FOCUS</h3>
+            <p className="text-lg md:text-xl text-[#295671] leading-relaxed mb-4">
+              The only firm specialising
+              in CEE secondaries
+              and liquidity solutions.
+              Dedicated coverage of<br />
+              this market since 2008
             </p>
           </motion.div>
 
@@ -38,8 +42,8 @@ const CoreValues = () => {
             <div className="mb-6">
               <img src={NetworkImage} alt="Network" className="w-32 h-24" />
             </div>
-            <h3 className="text-2xl font-semibold mb-4 text-[#002d3d] uppercase">NETWORK</h3>
-            <p className="text-[#295671] leading-relaxed mb-4">
+            <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-[#002d3d] uppercase">NETWORK</h3>
+            <p className="text-lg md:text-xl text-[#295671] leading-relaxed mb-4">
               Proven ability to generate proprietary deal flow and create value for our partners
             </p>
           </motion.div>
@@ -53,8 +57,8 @@ const CoreValues = () => {
             <div className="mb-6">
               <img src={ExperienceImage} alt="Experience" className="w-36 h-24" />
             </div>
-            <h3 className="text-2xl font-semibold mb-4 text-[#002d3d] uppercase">EXPERIENCE</h3>
-            <p className="text-[#295671] leading-relaxed mb-4">
+            <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-[#002d3d] uppercase">EXPERIENCE</h3>
+            <p className="text-lg md:text-xl text-[#295671] leading-relaxed mb-4">
               Over 60 investments completed by EastPeak team in this strategy
             </p>
           </motion.div>
