@@ -87,78 +87,78 @@ const Services = () => {
             className="max-w-5xl mx-auto px-4 mb-32"
           >
             {/* Top Dotted Line */}
-            <div className="w-full h-[2px] mb-16" style={{ 
+            <div className="w-full h-[2px] mb-8 md:mb-16" style={{ 
               backgroundImage: `radial-gradient(circle, #bd825c 1px, transparent 1px)`,
               backgroundSize: '12px 2px',
               backgroundPosition: 'center'
             }} />
 
-            <div className="relative h-60">
+            <div className="relative h-[400px] md:h-60">
               {/* Main Line with Arrows */}
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] flex items-center">
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] md:w-[80%] flex items-center">
                 {/* Left Arrow */}
-                <div className="absolute -left-4 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-r-[16px] border-r-[#bd825c]"></div>
+                <div className="absolute -left-3 md:-left-4 w-0 h-0 border-t-6 md:border-t-8 border-t-transparent border-b-6 md:border-b-8 border-b-transparent border-r-[12px] md:border-r-[16px] border-r-[#bd825c]"></div>
                 
                 {/* Line */}
                 <div className="w-full h-0.5 bg-[#bd825c]"></div>
                 
                 {/* Right Arrow */}
-                <div className="absolute -right-4 w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-[16px] border-l-[#bd825c]"></div>
+                <div className="absolute -right-3 md:-right-4 w-0 h-0 border-t-6 md:border-t-8 border-t-transparent border-b-6 md:border-b-8 border-b-transparent border-l-[12px] md:border-l-[16px] border-l-[#bd825c]"></div>
                 
                 {/* Left Label */}
-                <div className="absolute -left-48 -translate-y-1/2 text-[#bd825c] font-semibold whitespace-nowrap">
+                <div className="absolute -left-[max(8vw,_2rem)] top-1/2 -translate-y-1/2 text-[#bd825c] font-semibold whitespace-nowrap text-[1.5vw] md:text-base flex items-center">
                   POOLED<br />AND<br />DIVERSIFIED
                 </div>
                 
                 {/* Right Label */}
-                <div className="absolute -right-32 -translate-y-1/2 text-[#bd825c] font-semibold whitespace-nowrap">
+                <div className="absolute -right-[max(8vw,_2rem)] top-1/2 -translate-y-1/2 text-[#bd825c] font-semibold whitespace-nowrap text-[1.5vw] md:text-base flex items-center">
                   SINGLE<br />ASSETS
                 </div>
               </div>
 
               {/* Dots and Labels Container */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%]">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] md:w-[80%]">
                 {/* Dots */}
                 <div className="flex justify-between">
                   {[...Array(7)].map((_, i) => (
                     <div key={i} className="relative">
-                      <div className="w-3 h-3 rounded-full bg-[#bd825c]"></div>
+                      <div className="w-[1vw] h-[1vw] md:w-3 md:h-3 rounded-full bg-[#bd825c]"></div>
                       
                       {/* Top Labels */}
                       {i === 0 && (
-                        <div className="absolute -top-16 -translate-x-1/2 left-1/2 text-white text-center w-32">
+                        <div className="absolute -top-[8vw] md:-top-16 -translate-x-1/2 left-1/2 text-white text-center w-[15vw] md:w-32 text-[1.5vw] md:text-base">
                           LP<br />Secondaries
                         </div>
                       )}
                       {i === 2 && (
-                        <div className="absolute -top-16 -translate-x-1/2 left-1/2 text-white text-center w-32">
+                        <div className="absolute -top-[8vw] md:-top-16 -translate-x-1/2 left-1/2 text-white text-center w-[15vw] md:w-32 text-[1.5vw] md:text-base">
                           Fund<br />Restructuring
                         </div>
                       )}
                       {i === 4 && (
-                        <div className="absolute -top-20 -translate-x-1/2 left-1/2 text-white text-center w-32">
+                        <div className="absolute -top-[10vw] md:-top-20 -translate-x-1/2 left-1/2 text-white text-center w-[15vw] md:w-32 text-[1.5vw] md:text-base">
                           Aged &<br />Secondary<br />Directs
                         </div>
                       )}
                       {i === 6 && (
-                        <div className="absolute -top-16 -translate-x-1/2 left-1/2 text-white text-center w-32">
+                        <div className="absolute -top-[8vw] md:-top-16 -translate-x-1/2 left-1/2 text-white text-center w-[15vw] md:w-32 text-[1.5vw] md:text-base">
                           Co-<br />investments
                         </div>
                       )}
                       
                       {/* Bottom Labels */}
                       {i === 1 && (
-                        <div className="absolute top-8 -translate-x-1/2 left-1/2 text-white text-center w-32">
+                        <div className="absolute top-[4vw] md:top-8 -translate-x-1/2 left-1/2 text-white text-center w-[15vw] md:w-32 text-[1.5vw] md:text-base">
                           GP-led<br />Secondaries
                         </div>
                       )}
                       {i === 3 && (
-                        <div className="absolute top-8 -translate-x-1/2 left-1/2 text-white text-center w-32">
+                        <div className="absolute top-[4vw] md:top-8 -translate-x-1/2 left-1/2 text-white text-center w-[15vw] md:w-32 text-[1.5vw] md:text-base">
                           Tail<br />Ends
                         </div>
                       )}
                       {i === 5 && (
-                        <div className="absolute top-8 -translate-x-1/2 left-1/2 text-white text-center w-32">
+                        <div className="absolute top-[4vw] md:top-8 -translate-x-1/2 left-1/2 text-white text-center w-[15vw] md:w-32 text-[1.5vw] md:text-base">
                           Independent<br />Sponsor<br />Deals
                         </div>
                       )}
@@ -169,7 +169,7 @@ const Services = () => {
             </div>
 
             {/* Bottom Dotted Line */}
-            <div className="w-full h-[2px] mt-16" style={{ 
+            <div className="w-full h-[2px] mt-8 md:mt-16" style={{ 
               backgroundImage: `radial-gradient(circle, #bd825c 1px, transparent 1px)`,
               backgroundSize: '12px 2px',
               backgroundPosition: 'center'
