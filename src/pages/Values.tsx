@@ -2,9 +2,6 @@ import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import ImpactImage from "../../Images/Logo/Impact.png";
-import ESGImage from "../../Images/Logo/ESG.png";
-import ValuesImage from "../../Images/Logo/Values.png";
 import BeigeBackground from "/Images/Backgrounds/BeigeBack.png";
 
 const ValueSection = ({ title, description }: { title: string; description: string }) => {
@@ -23,17 +20,17 @@ const ValueSection = ({ title, description }: { title: string; description: stri
     >
       {title === "IMPACT" && (
         <div className="mb-6">
-          <img src={ImpactImage} alt="Impact" className="w-28 h-24" />
+          <img src="/Images/Logo/Impact.png" alt="Impact" className="w-28 h-24" />
         </div>
       )}
       {title === "ESG" && (
         <div className="mb-6">
-          <img src={ESGImage} alt="ESG" className="w-28 h-24" />
+          <img src="/Images/Logo/ESG.png" alt="ESG" className="w-28 h-24" />
         </div>
       )}
       {title === "VALUES" && (
         <div className="mb-6">
-          <img src={ValuesImage} alt="Values" className="w-28 h-24" />
+          <img src="/Images/Logo/Values.png" alt="Values" className="w-28 h-24" />
         </div>
       )}
       <h3 className="text-[#bd825c] text-3xl md:text-4xl font-semibold mb-6">{title}</h3>

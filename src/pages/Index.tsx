@@ -13,12 +13,11 @@ const Index = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="min-h-screen flex flex-col relative"
+      className="min-h-screen flex flex-col relative landing-bg"
       style={{
-        backgroundImage: `url('/backgrounds/EastPeak_page1.jpg')`,
+        backgroundImage: `url('/Images/Backgrounds/EastPeak_page1.jpg')`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
+        backgroundPosition: 'center'
       }}
     >
       {/* Semi-transparent overlay */}

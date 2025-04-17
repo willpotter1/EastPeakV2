@@ -1,8 +1,5 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import FocusImage from "../../Images/Logo/Focus.png";
-import NetworkImage from "../../Images/Logo/Network.png";
-import ExperienceImage from "../../Images/Logo/Experience.png";
 
 const CoreValues = () => {
   const [ref, inView] = useInView({
@@ -21,7 +18,7 @@ const CoreValues = () => {
             className="flex flex-col items-center text-center"
           >
             <div className="mb-6">
-              <img src={FocusImage} alt="Focus" className="w-28 h-24" />
+              <img src="/Images/Logo/Focus.png" alt="Focus" className="w-28 h-24" />
             </div>
             <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-[#002d3d] uppercase">FOCUS</h3>
             <p className="text-lg md:text-xl text-[#295671] leading-relaxed mb-4">
@@ -40,7 +37,7 @@ const CoreValues = () => {
             className="flex flex-col items-center text-center"
           >
             <div className="mb-6">
-              <img src={NetworkImage} alt="Network" className="w-32 h-24" />
+              <img src="/Images/Logo/Network.png" alt="Network" className="w-32 h-24" />
             </div>
             <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-[#002d3d] uppercase">NETWORK</h3>
             <p className="text-lg md:text-xl text-[#295671] leading-relaxed mb-4">
@@ -55,7 +52,7 @@ const CoreValues = () => {
             className="flex flex-col items-center text-center"
           >
             <div className="mb-6">
-              <img src={ExperienceImage} alt="Experience" className="w-36 h-24" />
+              <img src="/Images/Logo/Experience.png" alt="Experience" className="w-36 h-24" />
             </div>
             <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-[#002d3d] uppercase">EXPERIENCE</h3>
             <p className="text-lg md:text-xl text-[#295671] leading-relaxed mb-4">

@@ -134,6 +134,12 @@
   position: relative;
 }
 
+@media (min-width: 768px) {
+  .landing-bg {
+    background-attachment: fixed !important;
+  }
+}
+
 .overlay {
   background: rgba(26, 40, 53, 0.7);
 }

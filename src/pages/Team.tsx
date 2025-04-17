@@ -39,17 +39,17 @@ const Team = () => {
 
   const teamMembers = [
     {
-      img: "/public/lovable-uploads/cca8bed6-b13a-4d93-8807-0789b67c017b.png",
+      img: "/Images/People/henry.png",
       name: "Henry Potter",
       description: "Over 30 years of investing in central Europe since the fall of the Berlin wall, Henry has witnessed first-hand the transformation of central and eastern Europe. From 2018 to 2023 Henry was a Partner and investment committee member at Alpha Associates overseeing Alpha's CEE secondary and single asset investment program. From the early 1990s until 2008, he made financial sector private equity investments for EBRD, and helped create the EBRD's private equity funds investment team. Henry has backed many of the region's leading private equity firms since inception. He holds a B.A. and M.Sc. from McGill University and the London School of Economics, respectively.",
     },
     {
-      img: "/public/lovable-uploads/8ae90eb9-b245-4eb3-8b09-e62cd3c0d208.png",
+      img: "/Images/People/grega.png",
       name: "Gregor Dolenec",
       description: "Gregor brings over 20 years of experience in private equity, including a decade as a Partner at the Adriatic Fund, a EUR 66M private equity fund focused on South-East Europe managed alongside Alpha Associates. In addition to his portfolio company oversight responsibilities, Gregor was responsible for the Adriatic Fund's finances, investor relations, and reporting. In recent years, he has been engaged in direct private equity and venture capital investment projects and has served on the supervisory boards of several private companies. Gregor is a CFA charter holder and holds an MSc in Banking and Finance from the University of Ljubljana.",
     },
     {
-      img: "/public/lovable-uploads/542cae40-19e8-4b52-b7eb-bbb0e8e823bc.png",
+      img: "/Images/People/leon.png",
       name: "Leon Batagelj",
       description: "Leon has over 20 years of private equity and M&A experience in south-east Europe. From 2008, Leon was a Partner at the EUR 66m Adriatic Fund, managed alongside Alpha Associates, where he was the lead Partner on several of the fund's investments and served on the relevant corporate boards. Since 2019, Leon has advised various sell side M&A transactions. Earlier in his career, Leon worked at Wolf Theiss in Belgrade and the Publikum brokerage in Ljubljana. Leon completed his undergraduate studies at Faculty of Law of Ljubljana University and holds an LL.M. degree from Central European University and McGill University.",
     },
