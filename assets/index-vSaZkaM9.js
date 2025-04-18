@@ -76,8 +76,8 @@ Error generating stack: `+o.message+`
                              -top-16 rotate-90`,children:["LP",x.jsx("br",{}),"Secondaries"]}),t===2&&x.jsxs("div",{className:`absolute -translate-x-1/2 -translate-y-1/2 left-1/2 text-white text-center w-32 text-[min(2vw,1.1rem)] [@media(min-width:900px)]:text-base
                              [@media(min-width:900px)]:-top-16 [@media(min-width:900px)]:rotate-0
                              -top-16 rotate-90`,children:["Fund",x.jsx("br",{}),"Restructuring"]}),t===4&&x.jsxs("div",{className:`absolute -translate-x-1/2 -translate-y-1/2 left-1/2 text-white text-center w-32 text-[min(2vw,1.1rem)] [@media(min-width:900px)]:text-base
-                             [@media(min-width:900px)]:-top-20 [@media(min-width:900px)]:rotate-0
-                             -top-16 rotate-90`,children:["Aged &",x.jsx("br",{}),"Secondary",x.jsx("br",{}),"Directs"]}),t===6&&x.jsxs("div",{className:`absolute -translate-x-1/2 -translate-y-1/2 left-1/2 text-white text-center w-32 text-[min(2vw,1.1rem)] [@media(min-width:900px)]:text-base
+                             [@media(min-width:900px)]:-top-16 [@media(min-width:900px)]:rotate-0
+                             -top-16 rotate-90`,children:["Aged &",x.jsx("br",{}),"Secondary Directs"]}),t===6&&x.jsxs("div",{className:`absolute -translate-x-1/2 -translate-y-1/2 left-1/2 text-white text-center w-32 text-[min(2vw,1.1rem)] [@media(min-width:900px)]:text-base
                              [@media(min-width:900px)]:-top-16 [@media(min-width:900px)]:rotate-0
                              -top-16 rotate-90`,children:["Co-",x.jsx("br",{}),"investments"]}),t===1&&x.jsxs("div",{className:`absolute -translate-x-1/2 -translate-y-1/2 left-1/2 text-white text-center w-32 text-[min(2vw,1.1rem)] [@media(min-width:900px)]:text-base
                              [@media(min-width:900px)]:top-16 [@media(min-width:900px)]:rotate-0
