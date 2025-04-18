@@ -98,7 +98,7 @@ const Team = () => {
               >
                 speak invest AG
               </a>
-              ,<br />
+              ,
               which has a broader geographical remit
             </p>
           </div>
