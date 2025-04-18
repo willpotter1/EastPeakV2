@@ -18,15 +18,11 @@ const CoreValues = () => {
             className="flex flex-col items-center text-center"
           >
             <div className="mb-6">
-              <img src="/Images/Logo/Focus.png" alt="Focus" className="w-28 h-24" />
+              <img src="/Images/Logo/Network.png" alt="Network" className="w-32 h-24" />
             </div>
-            <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-[#002d3d] uppercase">FOCUS</h3>
+            <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-[#002d3d] uppercase">NETWORK</h3>
             <p className="text-lg md:text-xl text-[#295671] leading-relaxed mb-4">
-              The only firm specialising
-              in CEE secondaries
-              and liquidity solutions.
-              Dedicated coverage of<br />
-              this market since 2008
+              Proven ability to generate proprietary deal flow and create value for our partners
             </p>
           </motion.div>
 
@@ -37,11 +33,11 @@ const CoreValues = () => {
             className="flex flex-col items-center text-center"
           >
             <div className="mb-6">
-              <img src="/Images/Logo/Network.png" alt="Network" className="w-32 h-24" />
+              <img src="/Images/Logo/Focus.png" alt="Focus" className="w-28 h-24" />
             </div>
-            <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-[#002d3d] uppercase">NETWORK</h3>
+            <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-[#002d3d] uppercase">FOCUS</h3>
             <p className="text-lg md:text-xl text-[#295671] leading-relaxed mb-4">
-              Proven ability to generate proprietary deal flow and create value for our partners
+              The only firm specialising in CEE secondaries and liquidity solutions. Dedicated coverage of this market since 2008
             </p>
           </motion.div>
 

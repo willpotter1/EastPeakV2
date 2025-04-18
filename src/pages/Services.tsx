@@ -87,78 +87,100 @@ const Services = () => {
             className="max-w-5xl mx-auto px-4 mb-32"
           >
             {/* Top Dotted Line */}
-            <div className="w-full h-[2px] mb-8 md:mb-16" style={{ 
+            <div className="w-full h-[2px] mb-[20vw] [@media(min-width:900px)]:mb-24" style={{ 
               backgroundImage: `radial-gradient(circle, #bd825c 1px, transparent 1px)`,
               backgroundSize: '12px 2px',
               backgroundPosition: 'center'
             }} />
 
-            <div className="relative h-[400px] md:h-60">
+            <div className="relative h-[50vw] [@media(min-width:900px)]:h-60">
               {/* Main Line with Arrows */}
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] md:w-[80%] flex items-center">
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[min(60%,700px)] flex items-center
+                   [@media(min-width:900px)]:rotate-0 -rotate-90 origin-center">
                 {/* Left Arrow */}
-                <div className="absolute -left-3 md:-left-4 w-0 h-0 border-t-6 md:border-t-8 border-t-transparent border-b-6 md:border-b-8 border-b-transparent border-r-[12px] md:border-r-[16px] border-r-[#bd825c]"></div>
+                <div className="absolute -left-3 w-0 h-0 
+                     border-t-[0.5em] border-b-[0.5em] border-r-[0.75em]
+                     border-t-transparent border-b-transparent border-r-[#bd825c]"></div>
                 
                 {/* Line */}
-                <div className="w-full h-0.5 bg-[#bd825c]"></div>
+                <div className="w-full h-1 bg-[#bd825c]"></div>
                 
                 {/* Right Arrow */}
-                <div className="absolute -right-3 md:-right-4 w-0 h-0 border-t-6 md:border-t-8 border-t-transparent border-b-6 md:border-b-8 border-b-transparent border-l-[12px] md:border-l-[16px] border-l-[#bd825c]"></div>
+                <div className="absolute -right-3 w-0 h-0 
+                     border-t-[0.5em] border-b-[0.5em] border-l-[0.75em]
+                     border-t-transparent border-b-transparent border-l-[#bd825c]"></div>
                 
                 {/* Left Label */}
-                <div className="absolute -left-[max(8vw,_2rem)] top-1/2 -translate-y-1/2 text-[#bd825c] font-semibold whitespace-nowrap text-[1.5vw] md:text-base flex items-center">
+                <div className="absolute -left-[30%] top-1/2 -translate-y-1/2 text-[#bd825c] font-semibold whitespace-nowrap text-[min(2vw,1.1rem)] [@media(min-width:900px)]:text-base flex items-center
+                     [@media(min-width:900px)]:rotate-0 [@media(min-width:900px)]:-left-[25%] rotate-90 text-center">
                   POOLED<br />AND<br />DIVERSIFIED
                 </div>
                 
                 {/* Right Label */}
-                <div className="absolute -right-[max(8vw,_2rem)] top-1/2 -translate-y-1/2 text-[#bd825c] font-semibold whitespace-nowrap text-[1.5vw] md:text-base flex items-center">
+                <div className="absolute -right-[25%] top-1/2 -translate-y-1/2 text-[#bd825c] font-semibold whitespace-nowrap text-[min(2vw,1.1rem)] [@media(min-width:900px)]:text-base flex items-center
+                     [@media(min-width:900px)]:rotate-0 rotate-90 text-center">
                   SINGLE<br />ASSETS
                 </div>
               </div>
 
               {/* Dots and Labels Container */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] md:w-[80%]">
+              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[min(50%,600px)]
+                   [@media(min-width:900px)]:rotate-0 -rotate-90 origin-center">
                 {/* Dots */}
-                <div className="flex justify-between">
+                <div className="flex justify-between px-[10%]">
                   {[...Array(7)].map((_, i) => (
                     <div key={i} className="relative">
-                      <div className="w-[1vw] h-[1vw] md:w-3 md:h-3 rounded-full bg-[#bd825c]"></div>
+                      <div className="w-2 h-2 rounded-full bg-[#bd825c]"></div>
                       
                       {/* Top Labels */}
                       {i === 0 && (
-                        <div className="absolute -top-[8vw] md:-top-16 -translate-x-1/2 left-1/2 text-white text-center w-[15vw] md:w-32 text-[1.5vw] md:text-base">
+                        <div className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 text-white text-center w-32 text-[min(2vw,1.1rem)] [@media(min-width:900px)]:text-base
+                             [@media(min-width:900px)]:-top-16 [@media(min-width:900px)]:rotate-0
+                             -top-16 rotate-90">
                           LP<br />Secondaries
                         </div>
                       )}
                       {i === 2 && (
-                        <div className="absolute -top-[8vw] md:-top-16 -translate-x-1/2 left-1/2 text-white text-center w-[15vw] md:w-32 text-[1.5vw] md:text-base">
+                        <div className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 text-white text-center w-32 text-[min(2vw,1.1rem)] [@media(min-width:900px)]:text-base
+                             [@media(min-width:900px)]:-top-16 [@media(min-width:900px)]:rotate-0
+                             -top-16 rotate-90">
                           Fund<br />Restructuring
                         </div>
                       )}
                       {i === 4 && (
-                        <div className="absolute -top-[10vw] md:-top-20 -translate-x-1/2 left-1/2 text-white text-center w-[15vw] md:w-32 text-[1.5vw] md:text-base">
-                          Aged &<br />Secondary<br />Directs
+                        <div className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 text-white text-center w-32 text-[min(2vw,1.1rem)] [@media(min-width:900px)]:text-base
+                             [@media(min-width:900px)]:-top-16 [@media(min-width:900px)]:rotate-0
+                             -top-16 rotate-90">
+                          Aged &amp;<br />Secondary Directs
                         </div>
                       )}
                       {i === 6 && (
-                        <div className="absolute -top-[8vw] md:-top-16 -translate-x-1/2 left-1/2 text-white text-center w-[15vw] md:w-32 text-[1.5vw] md:text-base">
+                        <div className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 text-white text-center w-32 text-[min(2vw,1.1rem)] [@media(min-width:900px)]:text-base
+                             [@media(min-width:900px)]:-top-16 [@media(min-width:900px)]:rotate-0
+                             -top-16 rotate-90">
                           Co-<br />investments
                         </div>
                       )}
                       
                       {/* Bottom Labels */}
                       {i === 1 && (
-                        <div className="absolute top-[4vw] md:top-8 -translate-x-1/2 left-1/2 text-white text-center w-[15vw] md:w-32 text-[1.5vw] md:text-base">
+                        <div className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 text-white text-center w-32 text-[min(2vw,1.1rem)] [@media(min-width:900px)]:text-base
+                             [@media(min-width:900px)]:top-16 [@media(min-width:900px)]:rotate-0
+                             top-16 rotate-90">
                           GP-led<br />Secondaries
                         </div>
                       )}
                       {i === 3 && (
-                        <div className="absolute top-[4vw] md:top-8 -translate-x-1/2 left-1/2 text-white text-center w-[15vw] md:w-32 text-[1.5vw] md:text-base">
+                        <div className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 text-white text-center w-32 text-[min(2vw,1.1rem)] [@media(min-width:900px)]:text-base
+                             [@media(min-width:900px)]:top-16 [@media(min-width:900px)]:rotate-0
+                             top-16 rotate-90">
                           Tail<br />Ends
                         </div>
                       )}
                       {i === 5 && (
-                        <div className="absolute top-[4vw] md:top-8 -translate-x-1/2 left-1/2 text-white text-center w-[15vw] md:w-32 text-[1.5vw] md:text-base">
+                        <div className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 text-white text-center w-32 text-[min(2vw,1.1rem)] [@media(min-width:900px)]:text-base
+                             [@media(min-width:900px)]:top-16 [@media(min-width:900px)]:rotate-0
+                             top-16 rotate-90">
                           Independent<br />Sponsor<br />Deals
                         </div>
                       )}
@@ -169,7 +191,7 @@ const Services = () => {
             </div>
 
             {/* Bottom Dotted Line */}
-            <div className="w-full h-[2px] mt-8 md:mt-16" style={{ 
+            <div className="w-full h-[2px] mt-[20vw] [@media(min-width:900px)]:mt-24" style={{ 
               backgroundImage: `radial-gradient(circle, #bd825c 1px, transparent 1px)`,
               backgroundSize: '12px 2px',
               backgroundPosition: 'center'

@@ -18,7 +18,7 @@ const Mission = () => {
           className="max-w-5xl mx-auto text-center"
         >
           <h2 className="text-3xl md:text-5xl font-light text-[#002d3d] mb-10 leading-relaxed">
-            Our extensive experience in private markets and our deep knowledge of central Europe allows us to uncover potential that others overlook.
+            Our extensive experience in private markets and our deep knowledge of central Europe allows us to uncover potential that others overlook
           </h2>
         </motion.div>
       </div>

@@ -33,8 +33,8 @@ const ValueSection = ({ title, description }: { title: string; description: stri
           <img src="/Images/Logo/Values.png" alt="Values" className="w-28 h-24" />
         </div>
       )}
-      <h3 className="text-[#bd825c] text-3xl md:text-4xl font-semibold mb-6">{title}</h3>
-      <p className="text-gray-700 text-xl md:text-2xl leading-relaxed max-w-md">{description}</p>
+      <h3 className="text-[#bd825c] text-3xl [@media(min-width:900px)]:text-4xl font-semibold mb-6">{title}</h3>
+      <p className="text-gray-700 text-xl [@media(min-width:900px)]:text-2xl leading-relaxed max-w-md">{description}</p>
     </motion.div>
   );
 };
@@ -46,12 +46,12 @@ const Values = () => {
 
   const sections = [
     {
-      title: "IMPACT",
-      description: "The private equity asset class in central Europe has hugely contributed to the transformation of the region's economies and societies since the 1990s. By importing private capital, it has financed with long-term equity thousands of small and medium sized businesses – helping entrepreneurs realise their dreams. And helping offer better products and more choices to consumers and B2B customers."
-    },
-    {
       title: "ESG",
       description: "By integrating environmental, social, and governance principles into EastPeak's decision-making process, we aim to contribute to a more equitable and sustainable future. It's not just the right thing to do – it's also good business. Our experience shows that implementing ESG objectives can help power performance."
+    },
+    {
+      title: "IMPACT",
+      description: "The private equity asset class in central Europe has hugely contributed to the transformation of the region's economies and societies since the 1990s. By importing private capital, it has financed with long-term equity thousands of small and medium sized businesses – helping entrepreneurs realise their dreams. And helping offer better products and more choices to consumers and B2B customers."
     },
     {
       title: "VALUES",
@@ -73,7 +73,7 @@ const Values = () => {
         }}
       >
         <div className="container mx-auto px-6 md:px-12 py-32">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-6xl mx-auto w-full mb-32">
+          <div className="grid grid-cols-1 [@media(min-width:900px)]:grid-cols-3 gap-16 max-w-6xl mx-auto w-full mb-32">
             {sections.map((section, index) => (
               <ValueSection
                 key={index}
@@ -91,8 +91,8 @@ const Values = () => {
           className="bg-[#efe3d9] py-24"
         >
           <div className="container mx-auto px-6 md:px-12">
-            <p className="text-[#bd825c] text-2xl md:text-3xl text-center font-semibold leading-relaxed max-w-5xl mx-auto">
-              EastPeak is in the process of becoming a signatory to the Principles of Responsible Investing (PRI) and is implementing Article 8 of the 8 of the EU Sustainable Finance Disclosure Regulation (SFDR) for its funds
+            <p className="text-[#bd825c] text-2xl [@media(min-width:900px)]:text-3xl text-center font-semibold leading-relaxed max-w-5xl mx-auto">
+              EastPeak is in the process of becoming a signatory to the Principles of Responsible Investing (PRI) and is implementing Article 8 of the EU Sustainable Finance Disclosure Regulation (SFDR)
             </p>
           </div>
         </motion.div>

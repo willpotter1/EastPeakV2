@@ -51,16 +51,9 @@ const Navbar = ({ scrollToSection }: NavbarProps) => {
           />
         </button>
 
-        <div className="hidden md:flex items-center space-x-6 text-white text-lg">
+        <div className="hidden [@media(min-width:900px)]:flex items-center space-x-6 text-white text-lg">
           <button 
-            onClick={() => {
-              if (typeof window !== 'undefined') {
-                window.scrollTo({
-                  top: 830,  // Fixed scroll position for About section
-                  behavior: 'smooth'
-                });
-              }
-            }}
+            onClick={() => scrollToSection('about')}
             className={cn(
               "nav-link hover:text-[#b8860b] transition-colors",
               activeSection === 'about' && "text-[#b8860b]"
@@ -80,14 +73,7 @@ const Navbar = ({ scrollToSection }: NavbarProps) => {
           </button>
           <span className="text-white/30">|</span>
           <button 
-            onClick={() => {
-              if (typeof window !== 'undefined') {
-                window.scrollTo({
-                  top: 3860,  // Fixed scroll position for Team section
-                  behavior: 'smooth'
-                });
-              }
-            }}
+            onClick={() => scrollToSection('team')}
             className={cn(
               "nav-link hover:text-[#b8860b] transition-colors",
               activeSection === 'team' && "text-[#b8860b]"
@@ -97,14 +83,7 @@ const Navbar = ({ scrollToSection }: NavbarProps) => {
           </button>
           <span className="text-white/30">|</span>
           <button 
-            onClick={() => {
-              if (typeof window !== 'undefined') {
-                window.scrollTo({
-                  top: 5190,  // Fixed scroll position for Values section
-                  behavior: 'smooth'
-                });
-              }
-            }}
+            onClick={() => scrollToSection('values')}
             className={cn(
               "nav-link hover:text-[#b8860b] transition-colors",
               activeSection === 'values' && "text-[#b8860b]"
@@ -114,14 +93,7 @@ const Navbar = ({ scrollToSection }: NavbarProps) => {
           </button>
           <span className="text-white/30">|</span>
           <button 
-            onClick={() => {
-              if (typeof window !== 'undefined') {
-                window.scrollTo({
-                  top: 6520,  // Fixed scroll position to show mountain landscape
-                  behavior: 'smooth'
-                });
-              }
-            }}
+            onClick={() => scrollToSection('contact')}
             className={cn(
               "nav-link hover:text-[#b8860b] transition-colors",
               activeSection === 'contact' && "text-[#b8860b]"

@@ -69,7 +69,7 @@ const Team = () => {
         }}
       >
         <div className="container mx-auto px-6 md:px-12 py-32">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 mb-32">
+          <div className="grid grid-cols-1 [@media(min-width:900px)]:grid-cols-3 gap-16 mb-32">
             {teamMembers.map((member, index) => (
               <TeamMember
                 key={index}
@@ -89,7 +89,7 @@ const Team = () => {
         >
           <div className="container mx-auto px-6 md:px-12">
             <p className="text-[#2d3748] text-3xl md:text-4xl text-center font-light leading-relaxed">
-              "EastPeak works with its partner company{' '}
+              EastPeak works with its partner company{' '}
               <a 
                 href="https://www.speakinvest.com" 
                 target="_blank" 
@@ -99,7 +99,7 @@ const Team = () => {
                 speak invest AG
               </a>
               ,<br />
-              which has a broader geographical remit"
+              which has a broader geographical remit
             </p>
           </div>
         </motion.div>

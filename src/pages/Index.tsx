@@ -27,9 +27,9 @@ const Index = () => {
         <div className="relative">
           <HeroSection />
           {/* Dark navy blue section */}
-          <div className="absolute bottom-0 left-0 right-0 bg-[#223C48] text-[#bd825c] py-6">
+          <div className="absolute bottom-0 left-0 right-0 bg-[#223C48] text-[#bd825c] py-8">
             <div className="container mx-auto text-center">
-              <h2 className="text-xl md:text-3xl font-light tracking-wide px-4">
+              <h2 className="text-2xl md:text-4xl font-light tracking-wide px-4">
                 Your Partner for Central European Private Equity
                 <br className="hidden md:block" /> Liquidity Solutions
               </h2>

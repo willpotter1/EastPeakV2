@@ -18,12 +18,22 @@ const queryClient = new QueryClient();
 
 const App = () => {
   const scrollToSection = (name: string) => {
-    scroller.scrollTo(name, {
-      duration: 800,
-      delay: 0,
-      smooth: "easeInOutQuart",
-      offset: -96 // Height of navbar
-    });
+    if (name === 'contact') {
+      const contactSection = document.querySelector('#mountain-landscape');
+      if (contactSection) {
+        contactSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    } else {
+      scroller.scrollTo(name, {
+        duration: 800,
+        delay: 0,
+        smooth: "easeInOutQuart",
+        offset: -96 // Height of navbar
+      });
+    }
   };
 
   return (
@@ -55,7 +65,7 @@ const App = () => {
           </Element>
           
           <Element name="contact" className="section">
-            <Contact />
+            <Contact scrollToSection={scrollToSection} />
           </Element>
         </div>
       </TooltipProvider>

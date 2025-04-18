@@ -2,29 +2,19 @@ import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import { motion } from "framer-motion";
 
-const Contact = () => {
+interface ContactProps {
+  scrollToSection: (name: string) => void;
+}
+
+const Contact = ({ scrollToSection }: ContactProps) => {
   return (
     <>
       <div className="min-h-screen flex flex-col">
-      <Navbar
-        scrollToSection={(name) => {
-          if (name === 'contact') {
-            const totalHeight = document.documentElement.scrollHeight;
-            window.scrollTo({
-              top: totalHeight * 0.4, // Scroll to 40% down the page
-              behavior: 'smooth'
-            });
-          } else {
-            const element = document.getElementById(name);
-            if (element) {
-              element.scrollIntoView({ behavior: 'smooth' });
-            }
-          }
-        }}
-      />
+      <Navbar scrollToSection={scrollToSection} />
 
         
         <div 
+          id="mountain-landscape"
           className="flex-1 relative flex flex-col justify-end"
           style={{
             backgroundImage: "url('/Images/Backgrounds/EastPeak_lastpage.jpg')",
