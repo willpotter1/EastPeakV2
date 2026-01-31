@@ -47,7 +47,7 @@ const Values = () => {
   const sections = [
     {
       title: "ESG",
-      description: "By integrating environmental, social, and governance principles into EastPeak's decision-making process, we aim to contribute to a more equitable and sustainable future. It's not just the right thing to do – it's also good business. Our experience shows that implementing ESG objectives can help power performance."
+      description: "EastPeak is committed to incorporating the consideration of sustainability risks into its investment analysis and monitoring processes of its private equity strategies, in accordance with its Sustainable Investment Policy and in alignment with national (and EU) sustainable finance regulations. A full copy of EastPeak’s Sustainable Investment Policy is available upon request."
     },
     {
       title: "IMPACT",
@@ -91,9 +91,14 @@ const Values = () => {
           className="bg-[#efe3d9] py-24"
         >
           <div className="container mx-auto px-6 md:px-12">
-            <p className="text-[#bd825c] text-2xl [@media(min-width:900px)]:text-3xl text-center font-semibold leading-relaxed max-w-5xl mx-auto">
-              EastPeak is in the process of becoming a signatory to the Principles of Responsible Investing (PRI) and is implementing Article 8 of the EU Sustainable Finance Disclosure Regulation (SFDR)
-            </p>
+            <div className="flex justify-center">
+              <img
+                src="/Images/Logo/PRILogo.png"
+                alt="PRI Signatory logo"
+                className="w-full max-w-[38rem] drop-shadow-md"
+                loading="lazy"
+              />
+            </div>
           </div>
         </motion.div>
       </div>
