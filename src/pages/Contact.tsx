@@ -69,6 +69,9 @@ const Contact = ({ scrollToSection }: ContactProps) => {
             <p>
               Disclaimer: The information contained in this website is for general information purposes only and EastPeak Ltd is not soliciting any action based on it. The material is not to be constructed as an offer or a recommendation to buy or sell an interest in any partnership, fund, or other product nor is it to be interpreted as investment advice or investment management. The information is provided by EastPeak Ltd and while we endeavor to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk. In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website. If you send us an email, we may collect your name, email address and any other information you provide to us.
             </p>
+            <p>
+              Eastpeak Limited is an appointed representative of Crito Capital LLP, authorized and regulated by the Financial Conduct Authority.
+            </p>
             <div className="w-full border-t border-white/10 my-8" />
             <p className="text-white/60 text-center">
               Copyright © 2025. All rights reserved.
