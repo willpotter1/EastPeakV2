@@ -9,7 +9,7 @@ const StatsSection = () => {
 
   const stats = [
     {
-      number: "1b+",
+      number: "€1B+",
       subtitle: "programme NAV & distributions",
     },
     {
