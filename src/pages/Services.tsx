@@ -63,7 +63,7 @@ const Services = () => {
               className="text-center"
             >
               <p className="text-white/90 text-2xl md:text-3xl leading-relaxed font-semibold">
-                We invest in high quality mid-sized private businesses whether single assets or as part of a portfolio
+                We specialise in both <span className="text-[#bd825c]">LP-led and GP-led secondary transactions</span>, investing in high-quality mid-sized private businesses through <span className="text-[#bd825c]">single-asset opportunities or diversified portfolios</span>
               </p>
             </motion.div>
 
@@ -74,7 +74,7 @@ const Services = () => {
               className="text-center"
             >
               <p className="text-white/90 text-2xl md:text-3xl leading-relaxed font-semibold">
-                <span className="text-[#bd825c]">We offer both liquidity solutions for existing investors and capital for companies that wish to grow</span>
+                We <span className="text-[#bd825c]">partner with investors, sponsors, and management teams</span> to deliver tailored outcomes - providing liquidity where needed and growth capital to support long-term value creation
               </p>
             </motion.div>
           </div>
