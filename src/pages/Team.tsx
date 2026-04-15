@@ -41,7 +41,7 @@ const Team = () => {
     {
       img: "/Images/People/henry.png",
       name: "Henry Potter",
-      description: "Over 30 years of investing in central Europe since the fall of the Berlin wall, Henry has witnessed first-hand the transformation of central and eastern Europe. From 2018 to 2023 Henry was a Partner and investment committee member at Alpha Associates overseeing Alpha's CEE secondary and single asset investment program. From the early 1990s until 2008, he made financial sector private equity investments for EBRD, and helped create the EBRD's private equity funds investment team. Henry has backed many of the region's leading private equity firms since inception. He holds a B.A. and M.Sc. from McGill University and the London School of Economics, respectively.",
+      description: "Over 30 years of investing in central Europe since the fall of the Berlin wall, Henry has witnessed first-hand the transformation of central and eastern Europe. From 2008 to 2023 Henry was a Partner and investment committee member at Alpha Associates overseeing Alpha's CEE secondary and single asset investment program. From the early 1990s until 2008, he made financial sector private equity investments for EBRD, and helped create the EBRD's private equity funds investment team. Henry has backed many of the region's leading private equity firms since inception. He holds a B.A. and M.Sc. from McGill University and the London School of Economics, respectively.",
     },
     {
       img: "/Images/People/grega.png",
