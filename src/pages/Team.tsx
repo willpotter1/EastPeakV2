@@ -56,18 +56,19 @@ const Team = () => {
     {
       img: "/Images/People/dominic_nobg.png",
       name: "Dominic Reed",
+      imageClassName: "scale-x-[0.95] scale-y-[0.92] -translate-y-1.5 origin-bottom",
       description: "Dominic has over 35 years' experience in private equity investing and corporate leadership across Europe and emerging markets. He spent 14 years at UFG Private Equity, leading investments in sectors including telecom infrastructure, digital media, consumer, and pharmaceuticals, serving on the boards of multiple growth companies, and overseeing the programme as CIO. Prior to his career in private equity, he worked at the management level in the telecommunications industry with NYNEX CableComms and Metromedia International. He holds an MA from the University of Cambridge and an MBA from London Business School.",
-    },
-    {
-      img: "/Images/People/aleksandra_nobg.png",
-      name: "Aleksandra Pietrzykowska",
-      description: "Aleksandra has seen many sides of private investing - working in an institutional LP, at a financing bank, and in two GPs - venture and private credit. On the investment side, she worked at the LP level with PFR Ventures and at the Polish venture capital manager Experior, gaining experience how capital is allocated and deployed across the ecosystem. This is complemented by private credit, mezzanine and banking experience gained at Santander and, most recently, Syntaxis Capital. She holds a degree in Economics from the University of Cambridge.",
     },
     {
       img: "/Images/People/karol_nobg.png",
       name: "Karol Kaminski",
       imageClassName: "-translate-y-2",
       description: "Karol has over 16 years of private equity and M&A experience in central Europe. He spent nearly 11 years at Accession Capital Partners (previously Mezzanine Management), a private equity and private debt fund, where he led several investments and served on various boards and investment committees. From 2010 to 2015, Karol worked at the M&A advisory house Ernst & Young Corporate Finance in Warsaw, after working at Deloitte pre-2010. Karol holds a master's degree from the University of Economics in Poznan and a Bachelors degree from Abertay University in Dundee, and has pursued studies at Harvard University.",
+    },
+    {
+      img: "/Images/People/aleksandra_nobg.png",
+      name: "Aleksandra Pietrzykowska",
+      description: "Aleksandra has seen many sides of private investing - working in an institutional LP, at a financing bank, and in two GPs - venture and private credit. On the investment side, she worked at the LP level with PFR Ventures and at the Polish venture capital manager Experior, gaining experience how capital is allocated and deployed across the ecosystem. This is complemented by private credit, mezzanine and banking experience gained at Santander and, most recently, Syntaxis Capital. She holds a degree in Economics from the University of Cambridge.",
     },
   ];
 
