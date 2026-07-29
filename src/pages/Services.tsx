@@ -137,14 +137,14 @@ const Services = () => {
                         <div className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 text-white text-center w-32 text-[min(2vw,1.1rem)] [@media(min-width:900px)]:text-base
                              [@media(min-width:900px)]:-top-16 [@media(min-width:900px)]:rotate-0
                              -top-16 rotate-90">
-                          LP<br />Secondaries
+                          LP-Led<br />Secondaries
                         </div>
                       )}
                       {i === 2 && (
                         <div className="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 text-white text-center w-32 text-[min(2vw,1.1rem)] [@media(min-width:900px)]:text-base
                              [@media(min-width:900px)]:-top-16 [@media(min-width:900px)]:rotate-0
                              -top-16 rotate-90">
-                          Fund<br />Restructuring
+                          Fund<br />Restructurings
                         </div>
                       )}
                       {i === 4 && (
@@ -209,8 +209,8 @@ const Services = () => {
               <div className="flex items-start space-x-4">
                 <div className="w-3 h-3 mt-2 rounded-full bg-[#bd825c] flex-shrink-0"></div>
                 <div>
-                  <p className="text-xl"><span className="text-[#bd825c] text-2xl font-semibold">LP Secondaries: </span>
-                  <span className="text-white">We purchase investors in private equity funds in the region and have led over 30 such transactions. We buy both single interest and portfolios</span></p>
+                  <p className="text-xl"><span className="text-[#bd825c] text-2xl font-semibold">LP-Led Secondaries: </span>
+                  <span className="text-white">We purchase investors in private equity funds in the region and have led over 30 such transactions. We buy both single interests and portfolios</span></p>
                 </div>
               </div>
 
