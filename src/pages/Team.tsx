@@ -62,7 +62,7 @@ const Team = () => {
     {
       img: "/Images/People/karol_nobg2.png",
       name: "Karol Kaminski",
-      imageClassName: "-translate-y-2",
+      imageClassName: "scale-x-[0.95] -translate-y-2",
       description: "Karol has over 16 years of private equity and M&A experience in central Europe. He spent nearly 11 years at Accession Capital Partners (previously Mezzanine Management), a private equity and private debt fund, where he led several investments and served on various boards and investment committees. From 2010 to 2015, Karol worked at the M&A advisory house Ernst & Young Corporate Finance in Warsaw, after working at Deloitte pre-2010. Karol holds a master's degree from the University of Economics in Poznan and a Bachelors degree from Abertay University in Dundee, and has pursued studies at Harvard University.",
     },
     {
